@@ -6,15 +6,16 @@ left:150px;
 }
 td.nowMainMenu
 {
-	font-family:"Matisse ITC"; /*previously Lucida Console*/
+/*	font-family:"Verdana"; /*previously Lucida Console*/
+	font-family:"Comic Sans MS";
 /*	font-weight:"bold";         */
-	background-color:#E1DCE6; /* previosuly #000000 */	
+	background-color:#85A3E0; /* previosuly #000000 */	
 	color:black;	
 	width:180px;
 	padding:15px;
 	text-align:center;
 	cursor:pointer;	
-	font-size:20px;
+	font-size:18px;
 }
 td.nowImg
 {
@@ -31,7 +32,10 @@ table#nowtable
 {
 table-layout:fixed;
 }
-
+#btnS
+{
+	width:70px;
+}
 div.nowSide
 {
 position:absolute;
@@ -64,31 +68,39 @@ visibility:visible;
 #apiresults
 {
 /*border-collapse:collapse;*/
-font-family:"Comic Sans";
+font-family:"Calibri"; /*  Comic Sans*/
 width:750px;
+font-size:16px;
 }
+#trendresults
+{
+position:relative;
+left:220px;
+font-size:30px;
+}
+
 #apiresults td.tweetspace,td.userspace
 {
 padding:6px;
 height:50px;
-background-color:#E6FFE6; /*previously  #BFFFD4*/
+/*background-color:#E6FFE6; /*previously  #BFFFD4*/
 }
 
-#apiresults td.postspace
+#apiresults td.postspace, #trendresults td.trendspace 
 {
 padding:6px;
 height:50px;
-background-color:#E0F5FF; /*previously  #CCE6FF*/
+/*background-color:#E0F5FF; /*previously  #CCE6FF*/
 }
 
 #apiresults td.utspace
 {
 padding:6px;
 height:50px;
-background-color:#FFFFD6; 
+/*background-color:#FFFFD6; */
 text-align:justify;
 vertical-align:top;
-font-size:14px;
+/*font-size:14px;*/
 }
 
 label.ctrends
@@ -120,9 +132,50 @@ td.nowRightMenu
 	text-align:center;
 	cursor:pointer;	
 }
-a.noline
+a.noline,a.userlink
 {
 text-decoration:none;
-color:black;
+/*color:black;*/
 font-weight:bold;
+}
+a.userlink
+{
+color:#D65C33;
+}
+div.bottomline
+{
+position:fixed;
+bottom:5px;
+left:80px;
+}
+td.fixedstatus
+{
+	background-color:#283143; /*previously #3D3D5C */
+	color:white;	
+	width:100px;
+	padding:3px;
+	font-family:"Comic Sans MS";
+	text-align:center;
+	cursor:pointer;	
+}
+div.expandbottom
+{
+position:absolute;
+bottom:45px;
+left:80px;
+visibility:hidden;
+}
+table.siteinfoex
+{
+/*width:120px;*/
+font-family:"Comic Sans MS";	
+background-color:#E7EDF9; /*previously #9E9EAE */
+padding:6px;
+height:90px;
+}
+h3.noresult
+{
+font-family:"Segoe Print";
+position:relative;
+left:90px;
 }
